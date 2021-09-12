@@ -1,7 +1,7 @@
-site_url: https://ntn-boilerplate.netlify.app/
-logo_url: https://ntn-boilerplate.netlify.app/icon.png
+site_url: https://agitated-bhaskara-57e91d.netlify.app/
+logo_url: https://agitated-bhaskara-57e91d.netlify.app/icon.png
 
-publish_mode: editorial_workflow
+#publish_mode: editorial_workflow
 backend:
   name: git-gateway
   branch: master
@@ -9,6 +9,7 @@ backend:
 
 # used together with `npx netlify-cms-proxy-server`. https://www.netlifycms.org/docs/beta-features/#working-with-a-local-git-repository
 local_backend: true
+locale: es
 
 media_folder: static/img
 public_folder: /img
@@ -48,7 +49,7 @@ collections:
     # editor:
     #   preview: true
     fields:
-      - { label: 'Created Date', name: 'createdAt', widget: 'datetime', date_format: "YYYY-MM-DD", time_format: false }
+      - { label: 'Created Date', name: 'createdAt', widget: 'date', format: "YYYY-MM-DD", time_format: false }
       - { label: 'Title', name: 'title', widget: 'string', required: true }
       - { label: 'Description', name: 'description', widget: 'string', required: false }
       - { label: 'Body', name: 'body', widget: 'markdown', required: false }
